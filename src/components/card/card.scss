@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.portfolio__card {
+    position: relative;
+    max-width: 35rem;
+    height: fit-content;
+    margin: 1rem;
+
+    &:hover {
+        .portfolio__hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+    .portfolio__img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+.portfolio__hover {
+   width: 100%;
+   background-color: $bg-main;
+   position: absolute;
+   height: 100%;
+   top: 0;
+   left: 0;
+   transition: all 0.3s ease-in-out;
+   opacity: 0;
+   border-radius: 1rem;
+
+   .portfolio__plus {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 5rem;
+       color: white;
+       align-items: center;
+       height: 100%;
+   }
+}

@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.nav {
+   
+    .nav__list {
+        display: flex;
+
+        .nav__item {
+            margin-right: 5rem;
+
+            @media screen and (max-width:600px) {
+                &{
+                    margin-right: 2rem;
+                }
+            }
+            .nav__link {
+                color: $white;
+                font-size: 1.6rem;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    color: #1abc9c;
+                }
+            }
+        }
+    }
+
+}

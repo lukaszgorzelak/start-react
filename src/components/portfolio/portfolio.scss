@@ -1,0 +1,36 @@
+@import '../../variables';
+@import '../../mixins';
+
+.portfolio {
+    min-height: 90rem;
+    background-color: $white;
+
+    .heading {
+        @include heading($bg-header);
+     }
+
+     .portfolio__wrapper {
+         margin-top: 5rem;
+         display: grid;
+         justify-content: center;
+         padding-bottom: 5rem;
+         grid-template-columns: 350px 350px 350px;
+         grid-gap: 3rem;
+         @media screen and (max-width: 1200px) {
+            & {
+               grid-template-columns: 350px 350px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            & {
+               grid-template-columns: 350px;
+            }
+        }
+        @media screen and (max-width: 385px) {
+         & {
+            grid-template-columns: 1fr;
+         }
+      }
+     }
+}
+

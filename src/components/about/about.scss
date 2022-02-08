@@ -1,0 +1,70 @@
+@import '../../variables';
+@import '../../mixins';
+
+.about {
+    position: relative;
+    min-height:52rem;
+    background-color: $bg-main;
+    padding-bottom: 9rem;
+
+    .about__header {
+        @include heading($white);
+    }
+
+    .about_text {
+        display: flex;
+        justify-content: center;
+        padding: 4rem;
+        flex-wrap: wrap;
+
+        p {
+            font-size: 2rem;
+            font-weight: 300;
+            color: $white;
+            font-family: 'Lato';
+            width: 35rem;
+            line-height: 3rem;
+            margin-right: 2rem;
+        }
+
+        p:last-child {
+            margin-left: 2rem;
+
+            @media screen and (max-width: 854px) {
+                & {
+                    margin-left: unset;
+                }
+            }
+            @media screen and (max-width: 834px) {
+                & {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    .about_btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1.5rem 3.75rem;
+        font-size: 1.25rem;
+        color: #f8f9fa;
+        border: 0.2rem solid #f8f9fa;
+        border-radius: 0.5rem;
+        display: inline-block;
+        background-color: transparent;
+        font-family: 'Lato';
+        font-size: 2rem;
+        transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            color: #000;
+            background-color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
+        span {
+            margin-left: 1rem;
+        }
+    }
+}
