@@ -1,7 +1,7 @@
 {
   "name": "start-react",
   "version": "0.1.0",
-  "homepage": "https://lukaszgorzelak.github.io/start-react",
+  "homepage": "https://lukaszgorzelak.github.io/start-react/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
