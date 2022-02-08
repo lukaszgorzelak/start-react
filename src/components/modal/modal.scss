@@ -2,7 +2,7 @@
 
 .modal {
     position: fixed;
-    top: 57%;
+    top: 50%;
     left: 50%;
     display: flex;
     max-width: 80rem;
@@ -10,7 +10,7 @@
     background-color: #fff;
     border-radius: 1rem;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;
