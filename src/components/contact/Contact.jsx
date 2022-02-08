@@ -48,11 +48,11 @@ const Contact = () => {
                             <label htmlFor="name">Full Name</label>
                         </div>
                         <div className="contact__item email">
-                            <input id="email" type="text" name="email" required></input>
+                            <input id="email" type="email" name="email" required></input>
                             <label htmlFor="email">Email adress</label>
                         </div>
                         <div className="contact__item phone">
-                            <input id="phone" type="text" name="phone" required></input>
+                            <input id="phone" type="number" name="phone" required></input>
                             <label htmlFor="phone">Phone Number</label>
                         </div>
                         <div className="contact__item message">
